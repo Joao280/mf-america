@@ -41,8 +41,8 @@ export const items: ItemProps[] = [
 ];
 
 export default function Root(props) {
-  //@ts-ignore
   const parcelConfig = async () =>
+    //@ts-ignore
     import("@joaoc/mf-shared").then((module: any) => module.goBackBtnParcel);
 
   const parcelProps: GoBackBtnProps = {
